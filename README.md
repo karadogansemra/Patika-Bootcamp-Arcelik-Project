@@ -1,2 +1,2 @@
-# Patika-Bootcamp-Ar-elik-Project
+# Patika-Bootcamp-Arcelik-Project
 Patika.dev Arçelik IOS Bootcamp Final Project
