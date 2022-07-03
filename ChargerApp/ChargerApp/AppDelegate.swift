@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,11 +14,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Delay launch screen 3 seconds
-        Thread.sleep(forTimeInterval: 3.0)
+        
+        Thread.sleep(forTimeInterval: 3.0) // Delay launch screen 3 seconds
+        
+        notificationRequest() // Notification permission request
+        
         return true
     }
 
+    // MARK: Notification Request
+    func notificationRequest(){
+        let notificationCenter = UNUserNotificationCenter.current()
+        
+        notificationCenter.requestAuthorization(options: [.alert, .badge, .sound]) {(success,error)in
+            if error != nil {
+                print(error ?? "Notification permission error!")
+            }else{
+                // Permission obtained from user
+            }
+        }
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
