@@ -7,9 +7,10 @@
 
 import UIKit
 import UserNotifications
+import CoreLocation
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
 
 
@@ -17,13 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Thread.sleep(forTimeInterval: 3.0) // Delay launch screen 3 seconds
         
-        notificationRequest() // Notification permission request
+        notificationPermission() // Notification permission request
+        locationPermission() // Location permission request
         
         return true
     }
 
     // MARK: Notification Request
-    func notificationRequest(){
+    func notificationPermission(){
         let notificationCenter = UNUserNotificationCenter.current()
         
         notificationCenter.requestAuthorization(options: [.alert, .badge, .sound]) {(success,error)in
@@ -33,6 +35,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 // Permission obtained from user
             }
         }
+    }
+    
+    func locationPermission(){
+        let locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
     }
     
     // MARK: UISceneSession Lifecycle
