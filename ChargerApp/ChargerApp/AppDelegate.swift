@@ -6,17 +6,44 @@
 //
 
 import UIKit
+import UserNotifications
+import CoreLocation
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         Thread.sleep(forTimeInterval: 3.0) // Delay launch screen 3 seconds
+        
+        notificationPermission() // Notification permission request
+        locationPermission() // Location permission request
+        
         return true
     }
 
+    // MARK: Notification Request
+    func notificationPermission(){
+        let notificationCenter = UNUserNotificationCenter.current()
+        
+        notificationCenter.requestAuthorization(options: [.alert, .badge, .sound]) {(success,error)in
+            if error != nil {
+                print(error ?? "Notification permission error!")
+            }else{
+                // Permission obtained from user
+            }
+        }
+    }
+    
+    func locationPermission(){
+        let locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestAlwaysAuthorization()
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

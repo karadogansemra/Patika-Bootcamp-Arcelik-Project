@@ -17,9 +17,16 @@
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
+                   
 				</dict>
 			</array>
 		</dict>
 	</dict>
+        <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+        <string>In order for your application to work correctly, you need to turn on your location information. Please confirm location permission.</string>
+        <key>NSLocationAlwaysUsageDescription</key>
+        <string>In order for your application to work correctly, you need to turn on your location information. Please confirm location permission.</string>
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <string>In order for your application to work correctly, you need to turn on your location information. Please confirm location permission.</string>
 </dict>
 </plist>
