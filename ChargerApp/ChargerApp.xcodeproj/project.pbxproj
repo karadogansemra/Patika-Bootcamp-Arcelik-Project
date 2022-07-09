@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		F7D0F4D92871CB7E007A3D36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F4D82871CB7E007A3D36 /* AppDelegate.swift */; };
 		F7D0F4DB2871CB7E007A3D36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F4DA2871CB7E007A3D36 /* SceneDelegate.swift */; };
-		F7D0F4DD2871CB7E007A3D36 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F4DC2871CB7E007A3D36 /* LoginViewController.swift */; };
 		F7D0F4E02871CB7E007A3D36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D0F4DE2871CB7E007A3D36 /* Main.storyboard */; };
 		F7D0F4E22871CB7F007A3D36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D0F4E12871CB7F007A3D36 /* Assets.xcassets */; };
 		F7D0F4E52871CB7F007A3D36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D0F4E32871CB7F007A3D36 /* LaunchScreen.storyboard */; };
 		F7D106612878482800BC580C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7D106632878482800BC580C /* Localizable.strings */; };
+		F7D106682878992B00BC580C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F4DC2871CB7E007A3D36 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,7 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7D0F4DD2871CB7E007A3D36 /* LoginViewController.swift in Sources */,
+				F7D106682878992B00BC580C /* LoginViewController.swift in Sources */,
 				F7D0F4D92871CB7E007A3D36 /* AppDelegate.swift in Sources */,
 				F7D0F4DB2871CB7E007A3D36 /* SceneDelegate.swift in Sources */,
 			);
