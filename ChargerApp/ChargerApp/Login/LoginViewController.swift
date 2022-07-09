@@ -14,12 +14,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        epostaTextField.setUnderLine()
-        epostaTextField.changePlaceHolderColor()
+        epostaTextField.setUnderLine() // Text field set underline
+        epostaTextField.changePlaceHolderColor() // Text field changed place holder color 
       
     }
 }
-
+// MARK: UITextField Extension
 extension UITextField {
     
     func setUnderLine() {
@@ -42,6 +42,7 @@ extension UITextField {
     }
 }
 
+// MARK: UIColor Extension
 extension UIColor {
    convenience init(red: Int, green: Int, blue: Int) {
        assert(red >= 0 && red <= 255, "Invalid red component")
