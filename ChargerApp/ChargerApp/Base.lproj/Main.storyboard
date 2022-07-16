@@ -10,14 +10,71 @@
         <!--Giriş Yapın-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="ChargerApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qe5-Ak-3QE">
+                                <rect key="frame" x="0.0" y="98" width="414" height="754"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4fb-Zy-kAE">
+                                        <rect key="frame" x="10" y="360" width="394" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="HKR-Lh-O9u"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charger'ı kullanmak için giriş yapmanız gerekiyor." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sm-2f-L2d">
+                                        <rect key="frame" x="32.5" y="255.5" width="373.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.71764705882352942" green="0.74117647058823533" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charger'a hoş geldiniz." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NV3-bW-x43">
+                                        <rect key="frame" x="110.5" y="201" width="217.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OD6-jF-H1L">
+                                        <rect key="frame" x="76" y="542" width="262" height="58"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="LoginButton"/>
+                                        <connections>
+                                            <action selector="LoginButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogY-d4-aHB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10196078431372549" green="0.11764705882352941" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="NV3-bW-x43" firstAttribute="centerX" secondItem="0sm-2f-L2d" secondAttribute="centerX" id="4Yv-XC-E5A"/>
+                                    <constraint firstItem="OD6-jF-H1L" firstAttribute="leading" secondItem="Qe5-Ak-3QE" secondAttribute="leading" constant="76" id="GTa-kV-MdJ"/>
+                                    <constraint firstItem="4fb-Zy-kAE" firstAttribute="leading" secondItem="Qe5-Ak-3QE" secondAttribute="leading" constant="10" id="IRz-4f-7kX"/>
+                                    <constraint firstAttribute="bottom" secondItem="OD6-jF-H1L" secondAttribute="bottom" constant="154" id="LoC-Vk-EvP"/>
+                                    <constraint firstItem="4fb-Zy-kAE" firstAttribute="centerX" secondItem="OD6-jF-H1L" secondAttribute="centerX" id="PjY-UT-7Ac"/>
+                                    <constraint firstItem="4fb-Zy-kAE" firstAttribute="centerX" secondItem="Qe5-Ak-3QE" secondAttribute="centerX" id="UYx-OF-2v4"/>
+                                    <constraint firstItem="4fb-Zy-kAE" firstAttribute="centerY" secondItem="Qe5-Ak-3QE" secondAttribute="centerY" id="UlK-Z1-VIf"/>
+                                    <constraint firstItem="0sm-2f-L2d" firstAttribute="trailing" secondItem="Qe5-Ak-3QE" secondAttribute="trailingMargin" id="bT8-ts-WYl"/>
+                                    <constraint firstItem="4fb-Zy-kAE" firstAttribute="top" secondItem="0sm-2f-L2d" secondAttribute="bottom" constant="84" id="doX-YP-q4Z"/>
+                                    <constraint firstItem="0sm-2f-L2d" firstAttribute="top" secondItem="NV3-bW-x43" secondAttribute="bottom" constant="28" id="ngO-Tq-E1h"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.2627450980392157" green="0.28627450980392155" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qe5-Ak-3QE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="89b-gN-yJx"/>
+                            <constraint firstItem="Qe5-Ak-3QE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="F4R-W6-Gog"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qe5-Ak-3QE" secondAttribute="trailing" id="hDS-2Q-PjL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qe5-Ak-3QE" secondAttribute="bottom" constant="10" id="zkV-Dt-zZ7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Giriş Yapın" id="eM0-mZ-9NO"/>
+                    <connections>
+                        <outlet property="epostaTextField" destination="4fb-Zy-kAE" id="zj2-Zc-4IC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,4 +102,8 @@
             <point key="canvasLocation" x="42.028985507246382" y="68.973214285714278"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.26274509800000001" green="0.28627450980000002" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+    <resources>
+        <image name="LoginButton" width="240" height="44"/>
+    </resources>
 </document>

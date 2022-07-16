@@ -21,6 +21,42 @@
 			</array>
 		</dict>
 	</dict>
+    
+    <key>NSAppTransportSecurity</key>
+    <dict>
+      <key>NSExceptionDomains</key>
+      <dict>
+        <key>http://ec2-18-197-100-203.eu-central-1.compute.amazonaws.com:8080</key>
+        <dict>
+          <!--Include to allow subdomains-->
+          <key>NSIncludesSubdomains</key>
+          <true/>
+          <!--Include to allow HTTP requests-->
+          <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+          <!--Include to specify minimum TLS version-->
+          <key>NSTemporaryExceptionMinimumTLSVersion</key>
+          <string>TLSv1.1</string>
+        </dict>
+      </dict>
+    </dict>
+    
+<!--    <key>NSAppTransportSecurity</key>-->
+<!--       <dict>-->
+<!--           <key>NSAllowsArbitraryLoads</key>-->
+<!--           <true/>-->
+<!--           <key>NSExceptionDomains</key>-->
+<!--           <dict>-->
+<!--               <key>http://ec2-18-197-100-203.eu-central-1.compute.amazonaws.com:8080</key>-->
+<!--               <dict>-->
+<!--                   <key>NSExceptionAllowsInsecureHTTPLoads</key>-->
+<!--                   <true/>-->
+<!--                   <key>NSIncludesSubdomains</key>-->
+<!--                   <true/>-->
+<!--               </dict>-->
+<!--           </dict>-->
+<!--       </dict>-->
+    
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>In order for your application to work correctly, you need to turn on your location information. Please confirm location permission.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
