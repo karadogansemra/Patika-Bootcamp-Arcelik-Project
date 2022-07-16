@@ -412,6 +412,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChargerApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CHARGER;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "In order for your application to work correctly, you need to turn on your location information. Please confirm location permission.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "In order for your application to work correctly, you need to turn on your location information. Please confirm location permission.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order for your application to work correctly, you need to turn on your location information. Please confirm location permission.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -442,6 +445,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChargerApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CHARGER;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "In order for your application to work correctly, you need to turn on your location information. Please confirm location permission.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "In order for your application to work correctly, you need to turn on your location information. Please confirm location permission.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "In order for your application to work correctly, you need to turn on your location information. Please confirm location permission.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
