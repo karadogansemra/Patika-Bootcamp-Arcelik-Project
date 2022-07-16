@@ -42,6 +42,9 @@
                                         <rect key="frame" x="76" y="542" width="262" height="58"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="LoginButton"/>
+                                        <connections>
+                                            <action selector="LoginButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogY-d4-aHB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.10196078431372549" green="0.11764705882352941" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>

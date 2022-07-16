@@ -11,14 +11,32 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var epostaTextField: UITextField!
 
+    @IBAction func LoginButtonClick(_ sender: Any) {
+        let loginAPI = LoginAPI()
+        loginAPI.fetchLogin(email: "valid_email@domain.com",udid: "deviceUDID")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         epostaTextField.setUnderLine() // Text field set underline
-        epostaTextField.changePlaceHolderColor() // Text field changed place holder color 
-      
+        epostaTextField.changePlaceHolderColor() // Text field changed place holder color
+        
+        //Looks for single or multiple taps.
+         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    //Calls this function when the tap is recognized.
+    @objc func dismissKeyboard() {
+    //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 }
+
+
+
 // MARK: UITextField Extension
 extension UITextField {
     
