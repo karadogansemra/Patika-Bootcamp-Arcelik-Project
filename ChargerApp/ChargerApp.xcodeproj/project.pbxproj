@@ -10,6 +10,7 @@
 		0D21204FBF93AA4730FD5823 /* Pods_ChargerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E3F3DED02121208EDB6A75 /* Pods_ChargerApp.framework */; };
 		F74DF8C52882C90E005BF704 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DF8C42882C90E005BF704 /* Constants.swift */; };
 		F79FA3352884267600CF4245 /* ValidationEposta.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79FA3342884267600CF4245 /* ValidationEposta.swift */; };
+		F79FA33A28842CC900CF4245 /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79FA33928842CC900CF4245 /* AppointmentViewController.swift */; };
 		F7D0F4D92871CB7E007A3D36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F4D82871CB7E007A3D36 /* AppDelegate.swift */; };
 		F7D0F4DB2871CB7E007A3D36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F4DA2871CB7E007A3D36 /* SceneDelegate.swift */; };
 		F7D0F4E02871CB7E007A3D36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D0F4DE2871CB7E007A3D36 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		F7114D5328783E5F00012299 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F74DF8C42882C90E005BF704 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F79FA3342884267600CF4245 /* ValidationEposta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationEposta.swift; sourceTree = "<group>"; };
+		F79FA33928842CC900CF4245 /* AppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
 		F7D0F4D52871CB7E007A3D36 /* ChargerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChargerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D0F4D82871CB7E007A3D36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7D0F4DA2871CB7E007A3D36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		F79FA33828842ADC00CF4245 /* Appointments */ = {
 			isa = PBXGroup;
 			children = (
+				F79FA33928842CC900CF4245 /* AppointmentViewController.swift */,
 			);
 			path = Appointments;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79FA33A28842CC900CF4245 /* AppointmentViewController.swift in Sources */,
 				F74DF8C52882C90E005BF704 /* Constants.swift in Sources */,
 				F7D1066A2879A86900BC580C /* LoginAPI.swift in Sources */,
 				F79FA3352884267600CF4245 /* ValidationEposta.swift in Sources */,
