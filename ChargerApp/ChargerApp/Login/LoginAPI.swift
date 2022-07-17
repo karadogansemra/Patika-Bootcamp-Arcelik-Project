@@ -15,8 +15,11 @@ class LoginAPI {
     var email:String!
     var udid:String!
     var loginModel : LoginModel?
-    func fetchLogin(email : String, udid : String) {
-
+    
+ 
+    
+    func fetchLogin(email : String, udid : String ) {
+      
         let parameters = [
             "email": email,
             "deviceUDID": udid
@@ -30,7 +33,7 @@ class LoginAPI {
                    let decoder = JSONDecoder()
                    let model = try decoder.decode(LoginModel.self, from: data)
                    self.loginModel = model // set data login model
-                  
+                   
                } catch let error {
                    print(error)
                }

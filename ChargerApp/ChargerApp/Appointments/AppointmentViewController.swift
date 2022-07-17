@@ -11,19 +11,26 @@ class AppointmentViewController: UIViewController {
     var loginModel : LoginModel?
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(loginModel?.email)
-        // Do any additional setup after loading the view.
+        
+        navigationBarLeftItem()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: Navigation bar left icon set
+    func navigationBarLeftItem(){
+        var image = UIImage(named: "Profile")
+        image = image?.withRenderingMode(.alwaysOriginal)
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style:.plain, target: self, action: #selector(openProfilePage))
+        
+        
+       
     }
-    */
+ 
+    @objc func openProfilePage(){
+        print("Profile click")
+        /*let appointmentVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        self.navigationController?.pushViewController(appointmentVC, animated: true)*/
+    }
 
 }
