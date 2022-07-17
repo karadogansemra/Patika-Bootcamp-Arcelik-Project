@@ -8,13 +8,15 @@
 import UIKit
 import UserNotifications
 import CoreLocation
-
+public var UDID:String?
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        UDID = UIDevice.current.identifierForVendor?.uuidString
         
         Thread.sleep(forTimeInterval: 3.0) // Delay launch screen 3 seconds
         

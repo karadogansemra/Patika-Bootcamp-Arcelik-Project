@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
         
         if(isValidEmail){
             let loginAPI = LoginAPI()
-            loginAPI.fetchLogin(email: "valid_email@domain.com",udid: "deviceUDID")
+            loginAPI.fetchLogin(email: epostaTextField.text ?? "",udid: UDID ?? "")
         }else{
             print("Eposta is invalid!")
         }
@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
         
         epostaTextField.setUnderLine() // Text field set underline
         epostaTextField.changePlaceHolderColor() // Text field changed place holder color
-        epostaTextField.changeTextColor()
+        epostaTextField.changeTextColor() // Text field change text color
         
         //Looks for single or multiple taps.
          let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
