@@ -29,8 +29,8 @@ class AppointmentViewController: UIViewController {
  
     @objc func openProfilePage(){
         print("Profile click")
-        /*let appointmentVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-        self.navigationController?.pushViewController(appointmentVC, animated: true)*/
+        let appointmentVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        self.navigationController?.pushViewController(appointmentVC, animated: true)
     }
 
 }
