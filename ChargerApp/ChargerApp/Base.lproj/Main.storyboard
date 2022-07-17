@@ -98,40 +98,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F56-bp-480">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F56-bp-480">
                                 <rect key="frame" x="0.0" y="88" width="428" height="804"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Badge" translatesAutoresizingMaskIntoConstraints="NO" id="MrD-bm-0KJ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Badge" translatesAutoresizingMaskIntoConstraints="NO" id="MrD-bm-0KJ">
                                         <rect key="frame" x="149" y="62" width="130" height="130"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="Xm6-Vj-Ffd"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Henüz bir randevu oluşturmadınız." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dp-BT-7jy">
-                                        <rect key="frame" x="20" y="263" width="388" height="92"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Henüz bir randevu oluşturmadınız." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dp-BT-7jy">
+                                        <rect key="frame" x="83.666666666666657" y="263" width="260.66666666666674" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="92" id="z2k-hZ-o1c"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oluşturulan randevular burada listelenir." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igz-ZJ-Yh0">
-                                        <rect key="frame" x="20" y="363" width="388" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oluşturulan randevular burada listelenir." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igz-ZJ-Yh0">
+                                        <rect key="frame" x="63.333333333333343" y="363" width="301.66666666666663" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="WMA-wA-lP3"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.71764705880000002" green="0.74117647060000003" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLH-im-GFe">
-                                        <rect key="frame" x="94" y="551" width="240" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLH-im-GFe">
+                                        <rect key="frame" x="94" y="567" width="240" height="44"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="Appointment"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1019607843" green="0.1176470588" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="igz-ZJ-Yh0" secondAttribute="trailing" id="4Bb-a6-mpB"/>
+                                    <constraint firstAttribute="trailing" secondItem="kLH-im-GFe" secondAttribute="trailing" constant="94" id="E4L-R5-KMg"/>
+                                    <constraint firstItem="MrD-bm-0KJ" firstAttribute="centerX" secondItem="F56-bp-480" secondAttribute="centerX" id="ECX-O9-8zw"/>
+                                    <constraint firstAttribute="bottom" secondItem="kLH-im-GFe" secondAttribute="bottom" constant="193" id="FzA-sj-0ng"/>
+                                    <constraint firstItem="8dp-BT-7jy" firstAttribute="top" secondItem="MrD-bm-0KJ" secondAttribute="bottom" constant="71" id="HrN-CK-8HY"/>
+                                    <constraint firstItem="8dp-BT-7jy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="F56-bp-480" secondAttribute="leading" id="Rtz-fL-RSa"/>
+                                    <constraint firstItem="igz-ZJ-Yh0" firstAttribute="centerX" secondItem="F56-bp-480" secondAttribute="centerX" id="SQC-pX-R6Q"/>
+                                    <constraint firstItem="igz-ZJ-Yh0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="F56-bp-480" secondAttribute="leading" id="WUu-gg-qAF"/>
+                                    <constraint firstItem="kLH-im-GFe" firstAttribute="leading" secondItem="F56-bp-480" secondAttribute="leading" constant="94" id="Xd8-vi-srN"/>
+                                    <constraint firstItem="MrD-bm-0KJ" firstAttribute="top" secondItem="F56-bp-480" secondAttribute="top" constant="62" id="dlN-VL-YkE"/>
+                                    <constraint firstItem="8dp-BT-7jy" firstAttribute="centerX" secondItem="F56-bp-480" secondAttribute="centerX" id="kDf-md-7FL"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8dp-BT-7jy" secondAttribute="trailing" id="lZq-2E-3gs"/>
+                                    <constraint firstAttribute="trailing" secondItem="MrD-bm-0KJ" secondAttribute="trailing" constant="149" id="ll5-fZ-86K"/>
+                                    <constraint firstItem="igz-ZJ-Yh0" firstAttribute="top" secondItem="8dp-BT-7jy" secondAttribute="bottom" constant="8" id="rra-wE-MtY"/>
+                                    <constraint firstItem="kLH-im-GFe" firstAttribute="centerX" secondItem="F56-bp-480" secondAttribute="centerX" id="wIu-mH-hby"/>
+                                    <constraint firstItem="MrD-bm-0KJ" firstAttribute="leading" secondItem="F56-bp-480" secondAttribute="leading" constant="149" id="zEU-5a-ViZ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CVr-Or-CF3"/>
                         <color key="backgroundColor" red="0.26274509800000001" green="0.28627450980000002" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="F56-bp-480" firstAttribute="trailing" secondItem="CVr-Or-CF3" secondAttribute="trailing" id="KxU-zN-0NR"/>
+                            <constraint firstItem="F56-bp-480" firstAttribute="bottom" secondItem="CVr-Or-CF3" secondAttribute="bottom" id="NVn-aU-4CT"/>
+                            <constraint firstItem="F56-bp-480" firstAttribute="leading" secondItem="CVr-Or-CF3" secondAttribute="leading" id="mEs-Bs-rjr"/>
+                            <constraint firstItem="F56-bp-480" firstAttribute="top" secondItem="CVr-Or-CF3" secondAttribute="top" id="vu8-zf-pH8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Randevular" id="EE7-WN-upV"/>
                 </viewController>
