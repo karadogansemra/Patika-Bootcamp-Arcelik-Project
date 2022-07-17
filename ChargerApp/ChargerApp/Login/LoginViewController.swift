@@ -12,14 +12,23 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var epostaTextField: UITextField!
 
     @IBAction func LoginButtonClick(_ sender: Any) {
-        let loginAPI = LoginAPI()
-        loginAPI.fetchLogin(email: "valid_email@domain.com",udid: "deviceUDID")
+        
+        let validation = ValidationEposta()
+        let isValidEmail: Bool = validation.isValid(email: epostaTextField.text ?? "")
+        
+        if(isValidEmail){
+            let loginAPI = LoginAPI()
+            loginAPI.fetchLogin(email: "valid_email@domain.com",udid: "deviceUDID")
+        }else{
+            print("Eposta is invalid!")
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         epostaTextField.setUnderLine() // Text field set underline
         epostaTextField.changePlaceHolderColor() // Text field changed place holder color
+        epostaTextField.changeTextColor()
         
         //Looks for single or multiple taps.
          let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
@@ -51,7 +60,11 @@ extension UITextField {
         self.layer.masksToBounds = true
     }
     
-    func changePlaceHolderColor(){
+    func changeTextColor() {
+        self.textColor = UIColor(rgb: 0xB7BDCB)
+    }
+    
+    func changePlaceHolderColor() {
         
         self.attributedPlaceholder = NSAttributedString(
             string: "E-POSTA ADRESİNİZ",

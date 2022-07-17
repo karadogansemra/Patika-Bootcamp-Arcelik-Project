@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D21204FBF93AA4730FD5823 /* Pods_ChargerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E3F3DED02121208EDB6A75 /* Pods_ChargerApp.framework */; };
 		F74DF8C52882C90E005BF704 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DF8C42882C90E005BF704 /* Constants.swift */; };
+		F79FA3352884267600CF4245 /* ValidationEposta.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79FA3342884267600CF4245 /* ValidationEposta.swift */; };
 		F7D0F4D92871CB7E007A3D36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F4D82871CB7E007A3D36 /* AppDelegate.swift */; };
 		F7D0F4DB2871CB7E007A3D36 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0F4DA2871CB7E007A3D36 /* SceneDelegate.swift */; };
 		F7D0F4E02871CB7E007A3D36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D0F4DE2871CB7E007A3D36 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		F7114D5228783E5F00012299 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		F7114D5328783E5F00012299 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F74DF8C42882C90E005BF704 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F79FA3342884267600CF4245 /* ValidationEposta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationEposta.swift; sourceTree = "<group>"; };
 		F7D0F4D52871CB7E007A3D36 /* ChargerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChargerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D0F4D82871CB7E007A3D36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7D0F4DA2871CB7E007A3D36 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		F7D1066528786E7500BC580C /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				F79FA3342884267600CF4245 /* ValidationEposta.swift */,
 				F7D0F4DC2871CB7E007A3D36 /* LoginViewController.swift */,
 				F7D106692879A86900BC580C /* LoginAPI.swift */,
 			);
@@ -233,6 +236,7 @@
 			files = (
 				F74DF8C52882C90E005BF704 /* Constants.swift in Sources */,
 				F7D1066A2879A86900BC580C /* LoginAPI.swift in Sources */,
+				F79FA3352884267600CF4245 /* ValidationEposta.swift in Sources */,
 				F7D106682878992B00BC580C /* LoginViewController.swift in Sources */,
 				F7D0F4D92871CB7E007A3D36 /* AppDelegate.swift in Sources */,
 				F7D0F4DB2871CB7E007A3D36 /* SceneDelegate.swift in Sources */,
@@ -335,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -390,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
