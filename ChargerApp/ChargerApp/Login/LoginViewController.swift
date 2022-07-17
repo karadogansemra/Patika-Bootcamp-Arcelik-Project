@@ -10,6 +10,7 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var epostaTextField: UITextField!
+   
 
     @IBAction func LoginButtonClick(_ sender: Any) {
         
@@ -19,6 +20,10 @@ class LoginViewController: UIViewController {
         if(isValidEmail){
             let loginAPI = LoginAPI()
             loginAPI.fetchLogin(email: epostaTextField.text ?? "",udid: UDID ?? "")
+            
+            let appointmentVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AppointmentViewController") as! AppointmentViewController
+            self.navigationController?.pushViewController(appointmentVC, animated: true)
+            
         }else{
             print("Eposta is invalid!")
             self.toastMessage("Eposta is invalid!")

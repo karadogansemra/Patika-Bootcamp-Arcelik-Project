@@ -12,9 +12,9 @@ import Alamofire
 
 class LoginAPI {
 
-var email:String!
-var udid:String!
-
+    var email:String!
+    var udid:String!
+    var loginModel : LoginModel?
     func fetchLogin(email : String, udid : String) {
 
         let parameters = [
@@ -22,9 +22,18 @@ var udid:String!
             "deviceUDID": udid
         ]
         
-        Alamofire.request("http://ec2-18-197-100-203.eu-central-1.compute.amazonaws.com:8080/auth/login", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+        Alamofire.request(Constants.LoginURL, method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .responseJSON { response in
-                print(response)
+               //print(response)
+               guard let data = response.data else { return }
+               do {
+                   let decoder = JSONDecoder()
+                   let model = try decoder.decode(LoginModel.self, from: data)
+                   self.loginModel = model // set data login model
+                  
+               } catch let error {
+                   print(error)
+               }
             }
     }
 }

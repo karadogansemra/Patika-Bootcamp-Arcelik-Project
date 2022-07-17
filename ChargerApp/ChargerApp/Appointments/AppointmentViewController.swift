@@ -8,10 +8,10 @@
 import UIKit
 
 class AppointmentViewController: UIViewController {
-
+    var loginModel : LoginModel?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(loginModel?.email)
         // Do any additional setup after loading the view.
     }
     
